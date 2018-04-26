@@ -1,22 +1,26 @@
 ﻿@page
 @{
-    Layout = null;
+    Layout = "_Layout";
 }
 
-<!DOCTYPE html>
+<h1 class="display-1">Hello</h1>
+<button class="btn btn-block btn-primary" data-toggle="modal" data-target="#exampleModal">Test</button>
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Index</title>
-    <link rel="stylesheet" type="text/css" href="~/lib/bootstrap/css/bootstrap.css" />
-</head>
-<body>
-    <h1 class="display-1">Hello</h1>
-    <button class="btn btn-block btn-primary">Test</button>
-
-    <script src="~/lib/jquery/jquery.slim.js"></script>
-    <script src="~/lib/popper.js/umd/popper.js"></script>
-    <script src="~/lib/bootstrap/js/bootstrap.bundle.js"></script>
-</body>
-</html>
+<div class="modal" id="exampleModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Modal body text goes here.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Ok</button>
+            </div>
+        </div>
+    </div>
+</div>

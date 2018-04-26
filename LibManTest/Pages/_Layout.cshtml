@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewData["Title"]</title>
+    <environment names="Development">
+        <link rel="stylesheet" href="~/lib/bootstrap/css/bootstrap.css" />
+    </environment>
+    <environment names="Production">
+        <link rel="stylesheet" type="text/css" href="~/lib/bootstrap/css/bootstrap.min.css" />
+    </environment>
+</head>
+<body>
+    @RenderBody()
+    <environment names="Development">
+        <script src="~/lib/jquery/jquery.slim.js"></script>
+        <script src="~/lib/popper.js/umd/popper.js"></script>
+        <script src="~/lib/bootstrap/js/bootstrap.bundle.js"></script>
+    </environment>
+    <environment names="Production">
+        <script src="~/lib/jquery/jquery.slim.min.js"></script>
+        <script src="~/lib/popper.js/umd/popper.min.js"></script>
+        <script src="~/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    </environment>
+    @RenderSection("scripts", required: false)
+</body>
+</html>
